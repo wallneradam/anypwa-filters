@@ -59,8 +59,11 @@ jobs:
 
       - name: Commit when changed
         run: |
-          if git diff --quiet -- dist; then
+          # Only the payload decides. The manifest carries a build timestamp, so
+          # diffing the whole directory would commit every single run.
+          if git diff --quiet -- dist/scriptlets.json; then
             echo "No upstream scriptlet changes."
+            git checkout -- dist
             exit 0
           fi
           git config user.name 'github-actions[bot]'
