@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "generated": "2026-09-27T10:02:27.082Z",
+  "generated": "2026-10-06T11:19:00.502Z",
   "upstream": "https://github.com/gorhill/uBlock",
-  "revision": "01092d95dbc7d91599a5ad017d5b98aba1118659",
-  "count": 151,
-  "bytes": 329256
+  "revision": "9df989ecc483cd7ada4b195c47a0584ab2d97450",
+  "count": 153,
+  "bytes": 331834
 }
